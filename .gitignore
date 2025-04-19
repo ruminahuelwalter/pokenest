@@ -3,6 +3,8 @@
 /node_modules
 /build
 
+
+
 # Logs
 logs
 *.log
@@ -56,4 +58,5 @@ pids
 report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
 
 # mongo
+/mongo
 ./mongo

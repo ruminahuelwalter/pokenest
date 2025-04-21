@@ -58,7 +58,7 @@ pids
 report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
 
 # mongo
-/mongo
-./mongo
-/mongo/*
 mongo/
+mongod.lock
+mongo.cfg
+mongo-volume/

@@ -14,9 +14,12 @@ export class PokemonService {
   ){}
   
   
-  create(createPokemonDto: CreatePokemonDto) {
+  async create(createPokemonDto: CreatePokemonDto) {
     createPokemonDto.name = createPokemonDto.name.toLocaleLowerCase();
-    return createPokemonDto;
+
+    const pokemon = await this.pokemonModel.create( createPokemonDto );
+
+    return pokemon;
   }
 
   findAll() {
